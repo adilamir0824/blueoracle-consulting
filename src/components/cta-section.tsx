@@ -1,0 +1,46 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
+interface CTASectionProps {
+  title: string;
+  description: string;
+  primaryLabel?: string;
+  primaryHref?: string;
+  secondaryLabel?: string;
+  secondaryHref?: string;
+}
+
+export function CTASection({
+  title,
+  description,
+  primaryLabel = "Get in Touch",
+  primaryHref = "/contact",
+  secondaryLabel,
+  secondaryHref,
+}: CTASectionProps) {
+  return (
+    <section className="section-padding">
+      <div className="mx-auto max-w-4xl rounded-2xl border border-gold-500/20 bg-gradient-to-br from-navy-800 to-navy-900 p-10 text-center md:p-16">
+        <h2 className="font-display text-3xl font-bold text-white md:text-4xl">{title}</h2>
+        <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">{description}</p>
+        <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <Link
+            href={primaryHref}
+            className="inline-flex items-center gap-2 rounded-full bg-gold-500 px-8 py-3 text-sm font-semibold text-navy-950 transition-colors hover:bg-gold-400"
+          >
+            {primaryLabel}
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+          {secondaryLabel && secondaryHref && (
+            <Link
+              href={secondaryHref}
+              className="inline-flex items-center gap-2 rounded-full border border-white/20 px-8 py-3 text-sm font-semibold text-white transition-colors hover:border-gold-500/50 hover:text-gold-400"
+            >
+              {secondaryLabel}
+            </Link>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
