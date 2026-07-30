@@ -18,14 +18,14 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex items-center" aria-label="Blue Oracle Consulting home">
           <Image
             src="/logo.png"
             alt="Blue Oracle Consulting"
-            width={220}
-            height={72}
-            className="h-11 w-auto object-contain sm:h-12"
+            width={368}
+            height={120}
+            className="h-16 w-auto object-contain sm:h-[4.6rem] md:h-[5.2rem]"
             priority
           />
         </Link>

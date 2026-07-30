@@ -28,9 +28,9 @@ export function Footer() {
               <Image
                 src="/logo.png"
                 alt="Blue Oracle Consulting"
-                width={200}
-                height={66}
-                className="h-12 w-auto rounded-sm bg-white object-contain"
+                width={322}
+                height={106}
+                className="h-[4.6rem] w-auto rounded-sm bg-white object-contain sm:h-[5.2rem]"
               />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-teal-300">
