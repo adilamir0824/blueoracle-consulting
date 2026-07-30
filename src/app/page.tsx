@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   BarChart3,
@@ -49,18 +50,24 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-teal-400/10 blur-3xl" />
         <div className="relative mx-auto max-w-7xl section-padding">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold tracking-widest text-teal-500 uppercase">
-              Operations Management Consulting
-            </p>
-            <h1 className="mt-4 font-display text-4xl font-bold leading-tight text-slate-900 md:text-6xl">
+            <Image
+              src="/logo.png"
+              alt="Blue Oracle Consulting"
+              width={560}
+              height={184}
+              className="mb-8 h-20 w-auto object-contain sm:h-24 md:h-28"
+              priority
+            />
+            <h1 className="font-display text-4xl font-bold leading-tight text-slate-900 md:text-6xl">
               Plan smarter.{" "}
-              <span className="text-gradient">Schedule better.</span>{" "}
+              <span className="text-gradient">Maintain better.</span>{" "}
               Operate with confidence.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-slate-600 md:text-xl">
               Blue Oracle Consulting helps organizations optimize operations,
-              master planning and scheduling, and deploy AI-powered maintenance
-              systems that prevent downtime before it happens.
+              master planning and scheduling, and implement AI CMMS — so your
+              teams prevent downtime before it happens and keep critical assets
+              running reliably.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Link
