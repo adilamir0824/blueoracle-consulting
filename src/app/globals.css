@@ -7,13 +7,13 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-navy-950 text-slate-100 antialiased;
+    @apply bg-white text-slate-900 antialiased;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent;
   }
   .section-padding {
     @apply px-6 py-20 md:px-8 lg:px-12 lg:py-28;

@@ -76,13 +76,13 @@ export default function ServicesPage() {
       <section className="section-padding">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold tracking-widest text-gold-500 uppercase">
+            <p className="text-sm font-semibold tracking-widest text-teal-500 uppercase">
               Our Services
             </p>
-            <h1 className="mt-2 font-display text-4xl font-bold text-white md:text-5xl">
+            <h1 className="mt-2 font-display text-4xl font-bold text-slate-900 md:text-5xl">
               Consulting built for operators
             </h1>
-            <p className="mt-6 text-lg text-slate-400">
+            <p className="mt-6 text-lg text-slate-600">
               We don&apos;t deliver slide decks — we deliver results. Our
               consulting engagements are hands-on, practical, and designed to
               leave your team with systems that outlast our engagement.
@@ -102,38 +102,38 @@ export default function ServicesPage() {
               }`}
             >
               <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gold-500/10 text-gold-500">
+                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-cyan-50 text-cyan-600">
                   <service.icon className="h-7 w-7" />
                 </div>
-                <h2 className="mt-6 font-display text-3xl font-bold text-white">
+                <h2 className="mt-6 font-display text-3xl font-bold text-slate-900">
                   {service.title}
                 </h2>
-                <p className="mt-4 text-slate-400 leading-relaxed">
+                <p className="mt-4 text-slate-600 leading-relaxed">
                   {service.description}
                 </p>
                 <Link
                   href="/contact"
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold-500 hover:text-gold-400"
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-teal-500 hover:text-cyan-600"
                 >
                   Discuss this service
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
               <div
-                className={`rounded-xl border border-white/5 bg-navy-900/50 p-8 ${
+                className={`rounded-xl border border-slate-200 bg-slate-50 p-8 ${
                   index % 2 === 1 ? "lg:order-1" : ""
                 }`}
               >
-                <h3 className="text-sm font-semibold tracking-wider text-gold-500 uppercase">
+                <h3 className="text-sm font-semibold tracking-wider text-teal-500 uppercase">
                   What&apos;s included
                 </h3>
                 <ul className="mt-4 space-y-3">
                   {service.offerings.map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-3 text-sm text-slate-300"
+                      className="flex items-start gap-3 text-sm text-slate-600"
                     >
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
+                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-500" />
                       {item}
                     </li>
                   ))}
@@ -144,19 +144,19 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-navy-900/30">
+      <section className="section-padding bg-cyan-50/40">
         <div className="mx-auto max-w-7xl">
-          <h2 className="font-display text-2xl font-bold text-white md:text-3xl">
+          <h2 className="font-display text-2xl font-bold text-slate-900 md:text-3xl">
             Industries we serve
           </h2>
           <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
             {industries.map((industry) => (
               <div
                 key={industry.name}
-                className="flex flex-col items-center rounded-xl border border-white/5 bg-navy-900/50 p-6 text-center"
+                className="flex flex-col items-center rounded-xl border border-slate-200 bg-slate-50 p-6 text-center"
               >
-                <industry.icon className="h-8 w-8 text-gold-500" />
-                <p className="mt-3 text-sm font-medium text-slate-300">
+                <industry.icon className="h-8 w-8 text-teal-500" />
+                <p className="mt-3 text-sm font-medium text-slate-600">
                   {industry.name}
                 </p>
               </div>

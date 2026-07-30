@@ -85,20 +85,20 @@ export default function AICMMSPage() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden section-padding">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gold-500/10 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-cyan-100 via-transparent to-transparent" />
         <div className="relative mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-gold-500/20 bg-gold-500/10 px-4 py-1.5 text-xs font-semibold text-gold-400">
+            <div className="inline-flex items-center gap-2 rounded-full border border-cyan-200 bg-cyan-50 px-4 py-1.5 text-xs font-semibold text-cyan-600">
               <Zap className="h-3.5 w-3.5" />
               Available for Purchase
             </div>
-            <h1 className="mt-6 font-display text-4xl font-bold text-white md:text-5xl">
+            <h1 className="mt-6 font-display text-4xl font-bold text-slate-900 md:text-5xl">
               AI CMMS
             </h1>
-            <p className="mt-2 text-xl text-gold-400">
+            <p className="mt-2 text-xl text-cyan-600">
               Maintenance management, powered by AI
             </p>
-            <p className="mt-6 text-lg text-slate-400 leading-relaxed">
+            <p className="mt-6 text-lg text-slate-600 leading-relaxed">
               Stop reacting to breakdowns. AI CMMS gives your maintenance team
               a modern platform to track assets, manage work orders, schedule
               preventive maintenance, and get AI-powered predictions — all in
@@ -107,14 +107,14 @@ export default function AICMMSPage() {
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link
                 href="/contact?interest=cmms"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-8 py-3.5 text-sm font-semibold text-navy-950 hover:bg-gold-400"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-8 py-3.5 text-sm font-semibold text-teal-950 hover:bg-cyan-400"
               >
                 Request a Demo
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/contact?interest=cmms-purchase"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-8 py-3.5 text-sm font-semibold text-white hover:border-gold-500/50"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 px-8 py-3.5 text-sm font-semibold text-slate-900 hover:border-cyan-400"
               >
                 Inquire About Purchase
               </Link>
@@ -124,12 +124,12 @@ export default function AICMMSPage() {
       </section>
 
       {/* Features Grid */}
-      <section className="section-padding bg-navy-900/30">
+      <section className="section-padding bg-cyan-50/40">
         <div className="mx-auto max-w-7xl">
-          <h2 className="font-display text-3xl font-bold text-white">
+          <h2 className="font-display text-3xl font-bold text-slate-900">
             Everything your maintenance team needs
           </h2>
-          <p className="mt-4 max-w-2xl text-slate-400">
+          <p className="mt-4 max-w-2xl text-slate-600">
             Built by operations consultants who understand what maintenance
             teams actually need — not bloated enterprise software.
           </p>
@@ -137,11 +137,11 @@ export default function AICMMSPage() {
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="rounded-xl border border-white/5 bg-navy-900/50 p-6"
+                className="rounded-xl border border-slate-200 bg-slate-50 p-6"
               >
-                <feature.icon className="h-8 w-8 text-gold-500" />
-                <h3 className="mt-4 font-semibold text-white">{feature.title}</h3>
-                <p className="mt-2 text-sm text-slate-400 leading-relaxed">
+                <feature.icon className="h-8 w-8 text-cyan-600" />
+                <h3 className="mt-4 font-semibold text-slate-900">{feature.title}</h3>
+                <p className="mt-2 text-sm text-slate-600 leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -155,13 +155,13 @@ export default function AICMMSPage() {
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
-              <h2 className="font-display text-3xl font-bold text-white">
+              <h2 className="font-display text-3xl font-bold text-slate-900">
                 Why teams choose AI CMMS
               </h2>
               <ul className="mt-8 space-y-4">
                 {benefits.map((benefit) => (
-                  <li key={benefit} className="flex items-start gap-3 text-slate-300">
-                    <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold-500/20 text-xs text-gold-500">
+                  <li key={benefit} className="flex items-start gap-3 text-slate-600">
+                    <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-cyan-100 text-xs text-teal-500">
                       ✓
                     </span>
                     {benefit}
@@ -169,35 +169,35 @@ export default function AICMMSPage() {
                 ))}
               </ul>
             </div>
-            <div className="rounded-xl border border-white/10 bg-navy-800 p-4 shadow-2xl">
-              <div className="rounded-lg bg-navy-900 p-4">
-                <div className="flex items-center gap-2 border-b border-white/5 pb-3">
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 shadow-2xl">
+              <div className="rounded-lg bg-white p-4">
+                <div className="flex items-center gap-2 border-b border-slate-200 pb-3">
                   <div className="h-3 w-3 rounded-full bg-red-500/60" />
                   <div className="h-3 w-3 rounded-full bg-yellow-500/60" />
                   <div className="h-3 w-3 rounded-full bg-green-500/60" />
                   <span className="ml-2 text-xs text-slate-500">AI CMMS Dashboard</span>
                 </div>
                 <div className="mt-4 grid grid-cols-2 gap-3">
-                  <div className="rounded-lg bg-navy-800 p-3">
+                  <div className="rounded-lg bg-slate-50 p-3">
                     <p className="text-xs text-slate-500">Assets</p>
-                    <p className="text-xl font-bold text-white">6</p>
+                    <p className="text-xl font-bold text-slate-900">6</p>
                   </div>
-                  <div className="rounded-lg bg-navy-800 p-3">
+                  <div className="rounded-lg bg-slate-50 p-3">
                     <p className="text-xs text-slate-500">Open WOs</p>
                     <p className="text-xl font-bold text-blue-400">3</p>
                   </div>
-                  <div className="rounded-lg bg-navy-800 p-3">
+                  <div className="rounded-lg bg-slate-50 p-3">
                     <p className="text-xs text-slate-500">Uptime</p>
                     <p className="text-xl font-bold text-green-400">94%</p>
                   </div>
-                  <div className="rounded-lg bg-navy-800 p-3">
+                  <div className="rounded-lg bg-slate-50 p-3">
                     <p className="text-xs text-slate-500">Low Stock</p>
                     <p className="text-xl font-bold text-orange-400">2</p>
                   </div>
                 </div>
-                <div className="mt-3 rounded-lg border border-gold-500/20 bg-gold-500/5 p-3">
-                  <p className="text-xs font-medium text-gold-400">AI Assistant</p>
-                  <p className="mt-1 text-xs text-slate-400">
+                <div className="mt-3 rounded-lg border border-cyan-200 bg-cyan-50 p-3">
+                  <p className="text-xs font-medium text-cyan-600">AI Assistant</p>
+                  <p className="mt-1 text-xs text-slate-600">
                     &quot;Which parts are low on stock?&quot; → 2 items below reorder point...
                   </p>
                 </div>
@@ -208,12 +208,12 @@ export default function AICMMSPage() {
       </section>
 
       {/* How to buy */}
-      <section className="section-padding bg-navy-900/30">
+      <section className="section-padding bg-cyan-50/40">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-display text-3xl font-bold text-white">
+          <h2 className="font-display text-3xl font-bold text-slate-900">
             How to get AI CMMS
           </h2>
-          <p className="mt-4 text-slate-400">
+          <p className="mt-4 text-slate-600">
             AI CMMS is available for purchase and deployment for your organization.
             We handle setup, configuration, and training so your team is productive from day one.
           </p>
@@ -237,13 +237,13 @@ export default function AICMMSPage() {
             ].map((item) => (
               <div
                 key={item.step}
-                className="rounded-xl border border-white/5 bg-navy-900/50 p-6"
+                className="rounded-xl border border-slate-200 bg-slate-50 p-6"
               >
-                <span className="font-display text-3xl font-bold text-gold-500/30">
+                <span className="font-display text-3xl font-bold text-teal-500/30">
                   {item.step}
                 </span>
-                <h3 className="mt-2 font-semibold text-white">{item.title}</h3>
-                <p className="mt-2 text-sm text-slate-400">{item.desc}</p>
+                <h3 className="mt-2 font-semibold text-slate-900">{item.title}</h3>
+                <p className="mt-2 text-sm text-slate-600">{item.desc}</p>
               </div>
             ))}
           </div>

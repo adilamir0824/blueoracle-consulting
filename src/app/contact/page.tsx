@@ -44,13 +44,13 @@ function ContactForm() {
     return (
       <div className="rounded-xl border border-green-500/20 bg-green-500/5 p-10 text-center">
         <CheckCircle className="mx-auto h-12 w-12 text-green-400" />
-        <h3 className="mt-4 text-xl font-semibold text-white">Message sent!</h3>
-        <p className="mt-2 text-slate-400">
+        <h3 className="mt-4 text-xl font-semibold text-slate-900">Message sent!</h3>
+        <p className="mt-2 text-slate-600">
           Thank you for reaching out. We&apos;ll get back to you within 1 business day.
         </p>
         <button
           onClick={() => setStatus("idle")}
-          className="mt-6 text-sm font-semibold text-gold-500 hover:text-gold-400"
+          className="mt-6 text-sm font-semibold text-teal-500 hover:text-cyan-600"
         >
           Send another message
         </button>
@@ -62,7 +62,7 @@ function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid gap-6 sm:grid-cols-2">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-slate-300">
+          <label htmlFor="name" className="block text-sm font-medium text-slate-600">
             Name *
           </label>
           <input
@@ -71,12 +71,12 @@ function ContactForm() {
             required
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
-            className="mt-2 w-full rounded-lg border border-white/10 bg-navy-900 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-gold-500/50 focus:outline-none focus:ring-1 focus:ring-gold-500/50"
+            className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
             placeholder="Your name"
           />
         </div>
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-slate-300">
+          <label htmlFor="email" className="block text-sm font-medium text-slate-600">
             Email *
           </label>
           <input
@@ -85,14 +85,14 @@ function ContactForm() {
             required
             value={form.email}
             onChange={(e) => setForm({ ...form, email: e.target.value })}
-            className="mt-2 w-full rounded-lg border border-white/10 bg-navy-900 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-gold-500/50 focus:outline-none focus:ring-1 focus:ring-gold-500/50"
+            className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
             placeholder="you@company.com"
           />
         </div>
       </div>
 
       <div>
-        <label htmlFor="company" className="block text-sm font-medium text-slate-300">
+        <label htmlFor="company" className="block text-sm font-medium text-slate-600">
           Company
         </label>
         <input
@@ -100,20 +100,20 @@ function ContactForm() {
           type="text"
           value={form.company}
           onChange={(e) => setForm({ ...form, company: e.target.value })}
-          className="mt-2 w-full rounded-lg border border-white/10 bg-navy-900 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-gold-500/50 focus:outline-none focus:ring-1 focus:ring-gold-500/50"
+          className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
           placeholder="Your company"
         />
       </div>
 
       <div>
-        <label htmlFor="interest" className="block text-sm font-medium text-slate-300">
+        <label htmlFor="interest" className="block text-sm font-medium text-slate-600">
           I&apos;m interested in
         </label>
         <select
           id="interest"
           value={form.interest}
           onChange={(e) => setForm({ ...form, interest: e.target.value })}
-          className="mt-2 w-full rounded-lg border border-white/10 bg-navy-900 px-4 py-3 text-sm text-white focus:border-gold-500/50 focus:outline-none focus:ring-1 focus:ring-gold-500/50"
+          className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
         >
           <option value="general">General inquiry</option>
           <option value="consulting">Consulting services</option>
@@ -124,7 +124,7 @@ function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-slate-300">
+        <label htmlFor="message" className="block text-sm font-medium text-slate-600">
           Message *
         </label>
         <textarea
@@ -133,7 +133,7 @@ function ContactForm() {
           rows={5}
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
-          className="mt-2 w-full rounded-lg border border-white/10 bg-navy-900 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-gold-500/50 focus:outline-none focus:ring-1 focus:ring-gold-500/50"
+          className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
           placeholder="Tell us about your operation and how we can help..."
         />
       </div>
@@ -147,7 +147,7 @@ function ContactForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold-500 px-8 py-3.5 text-sm font-semibold text-navy-950 transition-colors hover:bg-gold-400 disabled:opacity-50 sm:w-auto"
+        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-cyan-500 px-8 py-3.5 text-sm font-semibold text-teal-950 transition-colors hover:bg-cyan-400 disabled:opacity-50 sm:w-auto"
       >
         {status === "loading" ? (
           <>
@@ -171,35 +171,35 @@ export default function ContactPage() {
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
-            <p className="text-sm font-semibold tracking-widest text-gold-500 uppercase">
+            <p className="text-sm font-semibold tracking-widest text-teal-500 uppercase">
               Contact
             </p>
-            <h1 className="mt-2 font-display text-4xl font-bold text-white md:text-5xl">
+            <h1 className="mt-2 font-display text-4xl font-bold text-slate-900 md:text-5xl">
               Let&apos;s start a conversation
             </h1>
-            <p className="mt-6 text-slate-400 leading-relaxed">
+            <p className="mt-6 text-slate-600 leading-relaxed">
               Whether you need help with operations planning, want to schedule a
               consultation, or are interested in purchasing AI CMMS — we&apos;re here
               to help.
             </p>
             <div className="mt-8 space-y-4">
               <div>
-                <p className="text-sm font-medium text-slate-300">Email</p>
+                <p className="text-sm font-medium text-slate-600">Email</p>
                 <a
                   href={`mailto:${siteConfig.email}`}
-                  className="text-gold-500 hover:text-gold-400"
+                  className="text-teal-500 hover:text-cyan-600"
                 >
                   {siteConfig.email}
                 </a>
               </div>
               <div>
-                <p className="text-sm font-medium text-slate-300">Response time</p>
-                <p className="text-slate-400">Within 1 business day</p>
+                <p className="text-sm font-medium text-slate-600">Response time</p>
+                <p className="text-slate-600">Within 1 business day</p>
               </div>
             </div>
           </div>
 
-          <Suspense fallback={<div className="text-slate-400">Loading form...</div>}>
+          <Suspense fallback={<div className="text-slate-600">Loading form...</div>}>
             <ContactForm />
           </Suspense>
         </div>

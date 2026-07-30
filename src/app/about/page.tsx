@@ -42,14 +42,14 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
             <div>
-              <p className="text-sm font-semibold tracking-widest text-gold-500 uppercase">
+              <p className="text-sm font-semibold tracking-widest text-teal-500 uppercase">
                 About Us
               </p>
-              <h1 className="mt-2 font-display text-4xl font-bold text-white md:text-5xl">
+              <h1 className="mt-2 font-display text-4xl font-bold text-slate-900 md:text-5xl">
                 The oracle sees what others miss
               </h1>
             </div>
-            <div className="space-y-4 text-slate-400 leading-relaxed">
+            <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
                 Blue Oracle Consulting was founded on a simple belief: most
                 operational problems aren&apos;t caused by bad people — they&apos;re
@@ -74,9 +74,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-navy-900/30">
+      <section className="section-padding bg-cyan-50/40">
         <div className="mx-auto max-w-7xl">
-          <h2 className="font-display text-3xl font-bold text-white">
+          <h2 className="font-display text-3xl font-bold text-slate-900">
             How we work
           </h2>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -87,11 +87,11 @@ export default function AboutPage() {
               { step: "04", title: "Deliver", desc: "Hands-on implementation, training, and measurement to ensure lasting impact." },
             ].map((phase) => (
               <div key={phase.step} className="relative">
-                <span className="font-display text-5xl font-bold text-gold-500/20">
+                <span className="font-display text-5xl font-bold text-teal-500/20">
                   {phase.step}
                 </span>
-                <h3 className="mt-2 text-lg font-semibold text-white">{phase.title}</h3>
-                <p className="mt-2 text-sm text-slate-400">{phase.desc}</p>
+                <h3 className="mt-2 text-lg font-semibold text-slate-900">{phase.title}</h3>
+                <p className="mt-2 text-sm text-slate-600">{phase.desc}</p>
               </div>
             ))}
           </div>
@@ -100,16 +100,16 @@ export default function AboutPage() {
 
       <section className="section-padding">
         <div className="mx-auto max-w-7xl">
-          <h2 className="font-display text-3xl font-bold text-white">Our values</h2>
+          <h2 className="font-display text-3xl font-bold text-slate-900">Our values</h2>
           <div className="mt-12 grid gap-6 md:grid-cols-2">
             {values.map((value) => (
               <div
                 key={value.title}
-                className="rounded-xl border border-white/5 bg-navy-900/50 p-8"
+                className="rounded-xl border border-slate-200 bg-slate-50 p-8"
               >
-                <value.icon className="h-8 w-8 text-gold-500" />
-                <h3 className="mt-4 text-lg font-semibold text-white">{value.title}</h3>
-                <p className="mt-2 text-sm text-slate-400 leading-relaxed">{value.description}</p>
+                <value.icon className="h-8 w-8 text-teal-500" />
+                <h3 className="mt-4 text-lg font-semibold text-slate-900">{value.title}</h3>
+                <p className="mt-2 text-sm text-slate-600 leading-relaxed">{value.description}</p>
               </div>
             ))}
           </div>

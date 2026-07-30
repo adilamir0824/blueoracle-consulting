@@ -44,20 +44,20 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-navy-700/40 via-navy-950 to-navy-950" />
-        <div className="absolute top-20 right-0 h-96 w-96 rounded-full bg-gold-500/5 blur-3xl" />
+      <section className="relative overflow-hidden bg-gradient-to-b from-cyan-50 via-white to-white">
+        <div className="absolute top-20 right-0 h-96 w-96 rounded-full bg-cyan-400/20 blur-3xl" />
+        <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-teal-400/10 blur-3xl" />
         <div className="relative mx-auto max-w-7xl section-padding">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold tracking-widest text-gold-500 uppercase">
+            <p className="text-sm font-semibold tracking-widest text-teal-500 uppercase">
               Operations Management Consulting
             </p>
-            <h1 className="mt-4 font-display text-4xl font-bold leading-tight text-white md:text-6xl">
+            <h1 className="mt-4 font-display text-4xl font-bold leading-tight text-slate-900 md:text-6xl">
               Plan smarter.{" "}
               <span className="text-gradient">Schedule better.</span>{" "}
               Operate with confidence.
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-slate-300 md:text-xl">
+            <p className="mt-6 text-lg leading-relaxed text-slate-600 md:text-xl">
               Blue Oracle Consulting helps organizations optimize operations,
               master planning and scheduling, and deploy AI-powered maintenance
               systems that prevent downtime before it happens.
@@ -65,14 +65,14 @@ export default function HomePage() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-8 py-3.5 text-sm font-semibold text-navy-950 transition-colors hover:bg-gold-400"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-8 py-3.5 text-sm font-semibold text-teal-950 transition-colors hover:bg-cyan-400"
               >
                 Start a Conversation
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/ai-cmms"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:border-gold-500/50 hover:text-gold-400"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 px-8 py-3.5 text-sm font-semibold text-slate-800 transition-colors hover:border-cyan-500 hover:text-cyan-600"
               >
                 Explore AI CMMS
               </Link>
@@ -82,14 +82,14 @@ export default function HomePage() {
       </section>
 
       {/* Stats */}
-      <section className="border-y border-white/5 bg-navy-900/50">
+      <section className="border-y border-slate-200 bg-cyan-50/60">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 section-padding md:grid-cols-4">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="font-display text-3xl font-bold text-gold-500 md:text-4xl">
+              <p className="font-display text-3xl font-bold text-cyan-600 md:text-4xl">
                 {stat.value}
               </p>
-              <p className="mt-1 text-sm text-slate-400">{stat.label}</p>
+              <p className="mt-1 text-sm text-teal-600">{stat.label}</p>
             </div>
           ))}
         </div>
@@ -99,13 +99,13 @@ export default function HomePage() {
       <section className="section-padding">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold tracking-widest text-gold-500 uppercase">
+            <p className="text-sm font-semibold tracking-widest text-teal-500 uppercase">
               What We Do
             </p>
-            <h2 className="mt-2 font-display text-3xl font-bold text-white md:text-4xl">
+            <h2 className="mt-2 font-display text-3xl font-bold text-slate-900 md:text-4xl">
               Consulting that moves the needle
             </h2>
-            <p className="mt-4 text-slate-400">
+            <p className="mt-4 text-slate-600">
               From shop floor to executive suite, we partner with you to build
               operations that are predictable, efficient, and ready to scale.
             </p>
@@ -118,7 +118,7 @@ export default function HomePage() {
           <div className="mt-10">
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-gold-500 hover:text-gold-400"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-600 hover:text-cyan-500"
             >
               View all services
               <ArrowRight className="h-4 w-4" />
@@ -128,18 +128,18 @@ export default function HomePage() {
       </section>
 
       {/* AI CMMS Highlight */}
-      <section className="section-padding bg-navy-900/30">
+      <section className="section-padding bg-gradient-to-b from-slate-50 to-white">
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-gold-500/20 bg-gold-500/10 px-4 py-1.5 text-xs font-semibold text-gold-400">
+              <div className="inline-flex items-center gap-2 rounded-full border border-cyan-200 bg-cyan-50 px-4 py-1.5 text-xs font-semibold text-cyan-700">
                 <Sparkles className="h-3.5 w-3.5" />
                 Our Product
               </div>
-              <h2 className="mt-4 font-display text-3xl font-bold text-white md:text-4xl">
+              <h2 className="mt-4 font-display text-3xl font-bold text-slate-900 md:text-4xl">
                 AI CMMS — Maintenance management, reimagined
               </h2>
-              <p className="mt-4 text-slate-400 leading-relaxed">
+              <p className="mt-4 text-slate-600 leading-relaxed">
                 Our AI-powered Computerized Maintenance Management System helps
                 you track assets, manage work orders, schedule preventive
                 maintenance, and get predictive insights — all through a
@@ -153,8 +153,8 @@ export default function HomePage() {
                   "AI assistant for instant maintenance answers",
                   "Predictive failure insights",
                 ].map((feature) => (
-                  <li key={feature} className="flex items-center gap-3 text-sm text-slate-300">
-                    <Wrench className="h-4 w-4 shrink-0 text-gold-500" />
+                  <li key={feature} className="flex items-center gap-3 text-sm text-slate-700">
+                    <Wrench className="h-4 w-4 shrink-0 text-cyan-500" />
                     {feature}
                   </li>
                 ))}
@@ -162,40 +162,40 @@ export default function HomePage() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="/contact?interest=cmms"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-6 py-3 text-sm font-semibold text-navy-950 hover:bg-gold-400"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-teal-950 hover:bg-cyan-400"
                 >
                   Request a Demo
                 </Link>
                 <Link
                   href="/ai-cmms"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white hover:border-gold-500/50"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-800 hover:border-cyan-500"
                 >
                   Learn More
                 </Link>
               </div>
             </div>
-            <div className="rounded-xl border border-white/10 bg-navy-800/50 p-6 shadow-2xl">
+            <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-lg">
               <div className="space-y-4">
-                <div className="flex items-center justify-between rounded-lg bg-navy-900 p-4">
+                <div className="flex items-center justify-between rounded-lg bg-cyan-50 p-4">
                   <div>
-                    <p className="text-xs text-slate-500">Open Work Orders</p>
-                    <p className="text-2xl font-bold text-white">12</p>
+                    <p className="text-xs text-teal-600">Open Work Orders</p>
+                    <p className="text-2xl font-bold text-slate-900">12</p>
                   </div>
-                  <BarChart3 className="h-8 w-8 text-gold-500/50" />
+                  <BarChart3 className="h-8 w-8 text-cyan-500/60" />
                 </div>
-                <div className="flex items-center justify-between rounded-lg bg-navy-900 p-4">
+                <div className="flex items-center justify-between rounded-lg bg-slate-50 p-4">
                   <div>
-                    <p className="text-xs text-slate-500">Asset Uptime</p>
-                    <p className="text-2xl font-bold text-green-400">94.2%</p>
+                    <p className="text-xs text-teal-600">Asset Uptime</p>
+                    <p className="text-2xl font-bold text-emerald-600">94.2%</p>
                   </div>
-                  <TrendingUp className="h-8 w-8 text-green-500/50" />
+                  <TrendingUp className="h-8 w-8 text-emerald-500/50" />
                 </div>
-                <div className="rounded-lg border border-gold-500/20 bg-gold-500/5 p-4">
+                <div className="rounded-lg border border-cyan-200 bg-cyan-50/80 p-4">
                   <div className="flex items-start gap-3">
-                    <Sparkles className="mt-0.5 h-4 w-4 text-gold-500" />
+                    <Sparkles className="mt-0.5 h-4 w-4 text-cyan-600" />
                     <div>
-                      <p className="text-sm font-medium text-gold-400">AI Insight</p>
-                      <p className="mt-1 text-xs text-slate-400">
+                      <p className="text-sm font-medium text-cyan-700">AI Insight</p>
+                      <p className="mt-1 text-xs text-slate-600">
                         Conveyor Belt A shows failure risk — recommend immediate
                         belt replacement based on maintenance history.
                       </p>

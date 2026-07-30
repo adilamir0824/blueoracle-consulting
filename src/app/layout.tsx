@@ -22,12 +22,17 @@ export const metadata: Metadata = {
   description:
     "Operations management consulting specializing in planning, scheduling, and AI-powered maintenance systems. Transform how your organization runs.",
   metadataBase: new URL("https://blueoracleconsulting.com"),
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "Blue Oracle Consulting",
     description: "Operations management consulting for planning, scheduling, and smarter maintenance.",
     url: "https://blueoracleconsulting.com",
     siteName: "Blue Oracle Consulting",
     type: "website",
+    images: [{ url: "/logo.png" }],
   },
 };
 
