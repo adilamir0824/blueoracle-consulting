@@ -25,7 +25,7 @@ const values = [
     icon: Lightbulb,
     title: "Practical innovation",
     description:
-      "We embrace technology like AI when it solves real problems — not because it's trendy. Our AI CMMS is proof of that philosophy.",
+      "We embrace technology like AI when it solves real problems — not because it's trendy. Blue MMS is proof of that philosophy.",
   },
   {
     icon: Shield,
@@ -65,7 +65,7 @@ export default function AboutPage() {
               </p>
               <p>
                 When we saw how much downtime and waste came from poor
-                maintenance management, we built AI CMMS — our own
+                maintenance management, we built Blue MMS — our own
                 AI-powered maintenance platform — to give teams the tools
                 they deserve.
               </p>
@@ -118,7 +118,7 @@ export default function AboutPage() {
 
       <CTASection
         title="Want to work with us?"
-        description="Whether you need consulting expertise or want to explore our AI CMMS platform, we're here to help."
+        description="Whether you need consulting expertise or want to explore Blue MMS, we're here to help."
         primaryLabel="Get in Touch"
         primaryHref="/contact"
       />

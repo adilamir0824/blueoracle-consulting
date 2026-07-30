@@ -118,8 +118,8 @@ function ContactForm() {
           <option value="general">General inquiry</option>
           <option value="consulting">Consulting services</option>
           <option value="planning">Planning & scheduling</option>
-          <option value="cmms">AI CMMS demo</option>
-          <option value="cmms-purchase">AI CMMS purchase</option>
+          <option value="cmms">Blue MMS demo</option>
+          <option value="cmms-purchase">Blue MMS purchase</option>
         </select>
       </div>
 
@@ -179,7 +179,7 @@ export default function ContactPage() {
             </h1>
             <p className="mt-6 text-slate-600 leading-relaxed">
               Whether you need help with operations planning, want to schedule a
-              consultation, or are interested in purchasing AI CMMS — we&apos;re here
+              consultation, or are interested in purchasing Blue MMS — we&apos;re here
               to help.
             </p>
             <div className="mt-8 space-y-4">

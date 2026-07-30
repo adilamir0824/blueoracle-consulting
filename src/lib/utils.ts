@@ -10,6 +10,8 @@ export const siteConfig = {
   domain: "blueoracleconsulting.com",
   url: "https://blueoracleconsulting.com",
   email: "hello@blueoracleconsulting.com",
-  tagline: "Operations management consulting for planning, scheduling, and smarter maintenance.",
+  tagline: "Operations management consulting for planning, scheduling, and Blue MMS.",
+  productName: "Blue MMS",
+  productTagline: "AI-powered maintenance management",
   cmmsDemoUrl: "http://localhost:3000",
 };

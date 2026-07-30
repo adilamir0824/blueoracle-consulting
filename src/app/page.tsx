@@ -49,40 +49,45 @@ export default function HomePage() {
         <div className="absolute top-20 right-0 h-96 w-96 rounded-full bg-cyan-400/20 blur-3xl" />
         <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-teal-400/10 blur-3xl" />
         <div className="relative mx-auto max-w-7xl section-padding">
-          <div className="max-w-3xl">
-            <Image
-              src="/logo.png"
-              alt="Blue Oracle Consulting"
-              width={560}
-              height={184}
-              className="mb-8 h-20 w-auto object-contain sm:h-24 md:h-28"
-              priority
-            />
-            <h1 className="font-display text-4xl font-bold leading-tight text-slate-900 md:text-6xl">
-              Plan smarter.{" "}
-              <span className="text-gradient">Maintain better.</span>{" "}
-              Operate with confidence.
-            </h1>
-            <p className="mt-6 text-lg leading-relaxed text-slate-600 md:text-xl">
-              Blue Oracle Consulting helps organizations optimize operations,
-              master planning and scheduling, and implement AI CMMS — so your
-              teams prevent downtime before it happens and keep critical assets
-              running reliably.
-            </p>
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-8 py-3.5 text-sm font-semibold text-teal-950 transition-colors hover:bg-cyan-400"
-              >
-                Start a Conversation
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-              <Link
-                href="/ai-cmms"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 px-8 py-3.5 text-sm font-semibold text-slate-800 transition-colors hover:border-cyan-500 hover:text-cyan-600"
-              >
-                Explore AI CMMS
-              </Link>
+          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
+            <div className="order-2 max-w-xl lg:order-1">
+              <h1 className="font-display text-4xl font-bold leading-tight text-slate-900 md:text-6xl">
+                Plan smarter.{" "}
+                <span className="text-gradient">Maintain better.</span>{" "}
+                Operate with confidence.
+              </h1>
+              <p className="mt-6 text-lg leading-relaxed text-slate-600 md:text-xl">
+                Blue Oracle Consulting helps organizations optimize operations,
+                master planning and scheduling, and implement Blue MMS — so your
+                teams prevent downtime before it happens and keep critical assets
+                running reliably.
+              </p>
+              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-8 py-3.5 text-sm font-semibold text-teal-950 transition-colors hover:bg-cyan-400"
+                >
+                  Start a Conversation
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+                <Link
+                  href="/blue-mms"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 px-8 py-3.5 text-sm font-semibold text-slate-800 transition-colors hover:border-cyan-500 hover:text-cyan-600"
+                >
+                  Explore Blue MMS
+                </Link>
+              </div>
+            </div>
+
+            <div className="order-1 flex justify-center lg:order-2 lg:justify-end">
+              <Image
+                src="/logo.png"
+                alt="Blue Oracle Consulting"
+                width={1680}
+                height={552}
+                className="h-60 w-auto max-w-full object-contain opacity-90 mix-blend-multiply sm:h-72 md:h-[21rem]"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -134,7 +139,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* AI CMMS Highlight */}
+      {/* Blue MMS Highlight */}
       <section className="section-padding bg-gradient-to-b from-slate-50 to-white">
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -144,12 +149,14 @@ export default function HomePage() {
                 Our Product
               </div>
               <h2 className="mt-4 font-display text-3xl font-bold text-slate-900 md:text-4xl">
-                AI CMMS — Maintenance management, reimagined
+                Blue MMS
               </h2>
+              <p className="mt-2 text-xl text-cyan-600">
+                AI-powered maintenance management
+              </p>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                Our AI-powered Computerized Maintenance Management System helps
-                you track assets, manage work orders, schedule preventive
-                maintenance, and get predictive insights — all through a
+                Blue MMS helps you track assets, manage work orders, schedule
+                preventive maintenance, and get predictive insights — all through a
                 natural language assistant.
               </p>
               <ul className="mt-6 space-y-3">
@@ -174,7 +181,7 @@ export default function HomePage() {
                   Request a Demo
                 </Link>
                 <Link
-                  href="/ai-cmms"
+                  href="/blue-mms"
                   className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-800 hover:border-cyan-500"
                 >
                   Learn More
@@ -217,11 +224,11 @@ export default function HomePage() {
 
       <CTASection
         title="Ready to optimize your operations?"
-        description="Whether you need consulting on planning and scheduling or want to see AI CMMS in action, we'd love to hear from you."
+        description="Whether you need consulting on planning and scheduling or want to see Blue MMS in action, we'd love to hear from you."
         primaryLabel="Schedule a Consultation"
         primaryHref="/contact"
-        secondaryLabel="Explore AI CMMS"
-        secondaryHref="/ai-cmms"
+        secondaryLabel="Explore Blue MMS"
+        secondaryHref="/blue-mms"
       />
     </>
   );

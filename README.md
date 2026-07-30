@@ -1,20 +1,22 @@
 # Blue Oracle Consulting
 
-Marketing website for [blueoracleconsulting.com](https://blueoracleconsulting.com) — operations management consulting with planning, scheduling, and AI CMMS product offerings.
+Marketing website for [blueoracleconsulting.com](https://blueoracleconsulting.com) — operations management consulting with planning, scheduling, and **Blue MMS** product offerings.
 
 ## Pages
 
 | Route | Description |
 |-------|-------------|
-| `/` | Home — hero, services overview, AI CMMS highlight |
+| `/` | Home — hero, services overview, Blue MMS highlight |
 | `/services` | Operations management, planning & scheduling, process optimization |
-| `/ai-cmms` | AI CMMS product page with features and purchase inquiry |
+| `/blue-mms` | Blue MMS — AI-powered maintenance management |
 | `/about` | Company story, approach, and values |
-| `/contact` | Contact form for consulting and CMMS demo/purchase requests |
+| `/contact` | Contact form for consulting and Blue MMS demo/purchase requests |
+
+> `/ai-cmms` redirects to `/blue-mms`.
 
 ## Related Project
 
-The **AI CMMS** product lives in a separate repo/app:
+The **Blue MMS** product app lives in a separate repo:
 
 ```
 ~/Projects/ai-cmms

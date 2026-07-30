@@ -9,7 +9,7 @@ const footerLinks = {
     { name: "Process Optimization", href: "/services#optimization" },
   ],
   Products: [
-    { name: "AI CMMS", href: "/ai-cmms" },
+    { name: "Blue MMS", href: "/blue-mms" },
     { name: "Request a Demo", href: "/contact?interest=cmms" },
   ],
   Company: [
