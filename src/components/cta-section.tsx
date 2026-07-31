@@ -10,6 +10,33 @@ interface CTASectionProps {
   secondaryHref?: string;
 }
 
+function isExternal(href: string) {
+  return href.startsWith("http://") || href.startsWith("https://");
+}
+
+function CtaLink({
+  href,
+  className,
+  children,
+}: {
+  href: string;
+  className: string;
+  children: React.ReactNode;
+}) {
+  if (isExternal(href)) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {children}
+      </a>
+    );
+  }
+  return (
+    <Link href={href} className={className}>
+      {children}
+    </Link>
+  );
+}
+
 export function CTASection({
   title,
   description,
@@ -24,20 +51,20 @@ export function CTASection({
         <h2 className="font-display text-3xl font-bold text-white md:text-4xl">{title}</h2>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-teal-200">{description}</p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Link
+          <CtaLink
             href={primaryHref}
             className="inline-flex items-center gap-2 rounded-full bg-cyan-500 px-8 py-3 text-sm font-semibold text-teal-950 transition-colors hover:bg-cyan-400"
           >
             {primaryLabel}
             <ArrowRight className="h-4 w-4" />
-          </Link>
+          </CtaLink>
           {secondaryLabel && secondaryHref && (
-            <Link
+            <CtaLink
               href={secondaryHref}
               className="inline-flex items-center gap-2 rounded-full border border-white/20 px-8 py-3 text-sm font-semibold text-white transition-colors hover:border-cyan-400 hover:text-cyan-300"
             >
               {secondaryLabel}
-            </Link>
+            </CtaLink>
           )}
         </div>
       </div>

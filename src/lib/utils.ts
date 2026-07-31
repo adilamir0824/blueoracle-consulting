@@ -13,5 +13,8 @@ export const siteConfig = {
   tagline: "Operations management consulting for planning, scheduling, and Blue MMS.",
   productName: "Blue MMS",
   productTagline: "AI-powered maintenance management",
-  cmmsDemoUrl: "http://localhost:3000",
+  /** Live Blue MMS app — set NEXT_PUBLIC_BLUE_MMS_DEMO_URL in Vercel after you deploy the app */
+  cmmsDemoUrl:
+    process.env.NEXT_PUBLIC_BLUE_MMS_DEMO_URL?.replace(/\/$/, "") ||
+    "http://localhost:3000",
 };

@@ -11,8 +11,10 @@ import {
   BarChart3,
   Shield,
   Zap,
+  ExternalLink,
 } from "lucide-react";
 import { CTASection } from "@/components/cta-section";
+import { siteConfig } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Blue MMS",
@@ -103,22 +105,70 @@ export default function BlueMMSPage() {
               preventive maintenance, and get AI-powered predictions — all in
               one place.
             </p>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Link
-                href="/contact?interest=cmms"
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+              <a
+                href={siteConfig.cmmsDemoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-8 py-3.5 text-sm font-semibold text-teal-950 hover:bg-cyan-400"
               >
-                Request a Demo
-                <ArrowRight className="h-4 w-4" />
-              </Link>
+                Try live demo
+                <ExternalLink className="h-4 w-4" />
+              </a>
               <Link
-                href="/contact?interest=cmms-purchase"
+                href="/contact?interest=cmms"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 px-8 py-3.5 text-sm font-semibold text-slate-900 hover:border-cyan-400"
               >
-                Inquire About Purchase
+                Request a walkthrough
+                <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
+            <p className="mt-4 text-xs text-slate-500">
+              Live demo opens Blue MMS in a new tab — no login required for the interactive demo.
+            </p>
           </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-slate-950">
+        <div className="mx-auto max-w-5xl">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-wide text-cyan-400">
+              Product walkthrough
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-bold text-white md:text-4xl">
+              See Blue MMS in action
+            </h2>
+            <p className="mt-4 text-slate-300">
+              A one-minute tour of assets, work orders, inventory, locations, and AI —
+              no narration, just the product.
+            </p>
+          </div>
+          <div className="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-black shadow-2xl shadow-cyan-950/40">
+            <video
+              className="aspect-video w-full bg-black"
+              controls
+              playsInline
+              preload="metadata"
+              controlsList="nodownload"
+              aria-label="Blue MMS product walkthrough video"
+            >
+              <source src="/demo/blue-mms-demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p className="mt-4 text-sm text-slate-400">
+            Prefer hands-on?{" "}
+            <a
+              href={siteConfig.cmmsDemoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-cyan-400 hover:text-cyan-300"
+            >
+              Open the live demo
+            </a>
+            .
+          </p>
         </div>
       </section>
 
@@ -150,57 +200,19 @@ export default function BlueMMSPage() {
 
       <section className="section-padding">
         <div className="mx-auto max-w-7xl">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div>
-              <h2 className="font-display text-3xl font-bold text-slate-900">
-                Why teams choose Blue MMS
-              </h2>
-              <ul className="mt-8 space-y-4">
-                {benefits.map((benefit) => (
-                  <li key={benefit} className="flex items-start gap-3 text-slate-600">
-                    <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-cyan-100 text-xs text-teal-500">
-                      ✓
-                    </span>
-                    {benefit}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 shadow-2xl">
-              <div className="rounded-lg bg-white p-4">
-                <div className="flex items-center gap-2 border-b border-slate-200 pb-3">
-                  <div className="h-3 w-3 rounded-full bg-red-500/60" />
-                  <div className="h-3 w-3 rounded-full bg-yellow-500/60" />
-                  <div className="h-3 w-3 rounded-full bg-green-500/60" />
-                  <span className="ml-2 text-xs text-slate-500">Blue MMS Dashboard</span>
-                </div>
-                <div className="mt-4 grid grid-cols-2 gap-3">
-                  <div className="rounded-lg bg-slate-50 p-3">
-                    <p className="text-xs text-slate-500">Assets</p>
-                    <p className="text-xl font-bold text-slate-900">6</p>
-                  </div>
-                  <div className="rounded-lg bg-slate-50 p-3">
-                    <p className="text-xs text-slate-500">Open WOs</p>
-                    <p className="text-xl font-bold text-blue-400">3</p>
-                  </div>
-                  <div className="rounded-lg bg-slate-50 p-3">
-                    <p className="text-xs text-slate-500">Uptime</p>
-                    <p className="text-xl font-bold text-green-400">94%</p>
-                  </div>
-                  <div className="rounded-lg bg-slate-50 p-3">
-                    <p className="text-xs text-slate-500">Low Stock</p>
-                    <p className="text-xl font-bold text-orange-400">2</p>
-                  </div>
-                </div>
-                <div className="mt-3 rounded-lg border border-cyan-200 bg-cyan-50 p-3">
-                  <p className="text-xs font-medium text-cyan-600">AI Assistant</p>
-                  <p className="mt-1 text-xs text-slate-600">
-                    &quot;Which parts are low on stock?&quot; → 2 items below reorder point...
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h2 className="font-display text-3xl font-bold text-slate-900">
+            Why teams choose Blue MMS
+          </h2>
+          <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+            {benefits.map((benefit) => (
+              <li key={benefit} className="flex items-start gap-3 text-slate-600">
+                <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-cyan-100 text-xs text-teal-500">
+                  ✓
+                </span>
+                {benefit}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -248,11 +260,11 @@ export default function BlueMMSPage() {
 
       <CTASection
         title="Ready to see Blue MMS in action?"
-        description="Request a personalized demo or inquire about purchasing Blue MMS for your organization."
-        primaryLabel="Request a Demo"
-        primaryHref="/contact?interest=cmms"
-        secondaryLabel="General Inquiry"
-        secondaryHref="/contact"
+        description="Try the live interactive demo, or request a personalized walkthrough for your plant."
+        primaryLabel="Try live demo"
+        primaryHref={siteConfig.cmmsDemoUrl}
+        secondaryLabel="Contact us"
+        secondaryHref="/contact?interest=cmms"
       />
     </>
   );

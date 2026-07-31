@@ -5,6 +5,7 @@ import {
   BarChart3,
   CalendarClock,
   Cog,
+  ExternalLink,
   Sparkles,
   Target,
   TrendingUp,
@@ -12,6 +13,7 @@ import {
 } from "lucide-react";
 import { ServiceCard } from "@/components/service-card";
 import { CTASection } from "@/components/cta-section";
+import { siteConfig } from "@/lib/utils";
 
 const services = [
   {
@@ -173,13 +175,16 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Link
-                  href="/contact?interest=cmms"
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <a
+                  href={siteConfig.cmmsDemoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-teal-950 hover:bg-cyan-400"
                 >
-                  Request a Demo
-                </Link>
+                  Try live demo
+                  <ExternalLink className="h-4 w-4" />
+                </a>
                 <Link
                   href="/blue-mms"
                   className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-800 hover:border-cyan-500"
