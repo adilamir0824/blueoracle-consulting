@@ -50,10 +50,10 @@ export default function HomePage() {
                 Operate with confidence.
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-slate-600 md:text-xl">
-                Blue Oracle Consulting helps organizations optimize operations,
-                master planning and scheduling, and implement Blue MMS — so your
-                teams prevent downtime before it happens and keep critical assets
-                running reliably.
+                Preventing downtime in a smarter way. Blue Oracle Consulting helps
+                you optimize operations and planning so your teams spend more time
+                on value added work. Powered by AI and Blue MMS, a platform that
+                keeps assets, work orders, and inventory connected.
               </p>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <Link
