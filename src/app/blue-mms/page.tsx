@@ -99,7 +99,7 @@ export default function BlueMMSPage() {
             <p className="mt-2 text-xl text-cyan-600">
               AI-powered maintenance management
             </p>
-            <p className="mt-6 text-lg text-slate-600 leading-relaxed">
+            <p className="mt-3 text-lg text-slate-600 leading-relaxed">
               Stop reacting to breakdowns. Blue MMS gives your maintenance team
               a modern platform to track assets, manage work orders, schedule
               preventive maintenance, and get AI-powered predictions — all in
@@ -136,15 +136,15 @@ export default function BlueMMSPage() {
             <p className="text-sm font-semibold uppercase tracking-wide text-cyan-400">
               Product walkthrough
             </p>
-            <h2 className="mt-3 font-display text-3xl font-bold text-white md:text-4xl">
+            <h2 className="mt-2 font-display text-3xl font-bold text-white md:text-4xl">
               See Blue MMS in action
             </h2>
-            <p className="mt-4 text-slate-300">
+            <p className="mt-2 text-slate-300">
               A one-minute tour of assets, work orders, inventory, locations, and AI —
               no narration, just the product.
             </p>
           </div>
-          <div className="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-black shadow-2xl shadow-cyan-950/40">
+          <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-black shadow-2xl shadow-cyan-950/40">
             <video
               className="aspect-video w-full bg-black"
               controls
