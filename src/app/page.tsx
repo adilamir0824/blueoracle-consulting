@@ -94,7 +94,7 @@ export default function HomePage() {
               What We Do
             </p>
             <h2 className="mt-2 font-display text-3xl font-bold text-slate-900 md:text-4xl">
-              Consulting that moves the needle
+              Hands-on consulting for planning and maintenance
             </h2>
             <p className="mt-4 text-slate-600">
               From shop floor to executive suite, we partner with you to build
