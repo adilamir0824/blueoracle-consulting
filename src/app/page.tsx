@@ -2,13 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   ArrowRight,
-  BarChart3,
   CalendarClock,
   Cog,
   ExternalLink,
   Sparkles,
   Target,
-  TrendingUp,
   Wrench,
 } from "lucide-react";
 import { ServiceCard } from "@/components/service-card";
@@ -34,13 +32,6 @@ const services = [
     description:
       "Identify bottlenecks, eliminate inefficiencies, and implement continuous improvement programs that deliver measurable ROI.",
   },
-];
-
-const stats = [
-  { value: "15+", label: "Years of experience" },
-  { value: "50+", label: "Projects delivered" },
-  { value: "30%", label: "Avg. efficiency gain" },
-  { value: "24/7", label: "Maintenance visibility" },
 ];
 
 export default function HomePage() {
@@ -92,20 +83,6 @@ export default function HomePage() {
               />
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="border-y border-slate-200 bg-cyan-50/60">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 section-padding md:grid-cols-4">
-          {stats.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <p className="font-display text-3xl font-bold text-cyan-600 md:text-4xl">
-                {stat.value}
-              </p>
-              <p className="mt-1 text-sm text-teal-600">{stat.label}</p>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -193,35 +170,21 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-lg">
-              <div className="space-y-4">
-                <div className="flex items-center justify-between rounded-lg bg-cyan-50 p-4">
-                  <div>
-                    <p className="text-xs text-teal-600">Open Work Orders</p>
-                    <p className="text-2xl font-bold text-slate-900">12</p>
-                  </div>
-                  <BarChart3 className="h-8 w-8 text-cyan-500/60" />
-                </div>
-                <div className="flex items-center justify-between rounded-lg bg-slate-50 p-4">
-                  <div>
-                    <p className="text-xs text-teal-600">Asset Uptime</p>
-                    <p className="text-2xl font-bold text-emerald-600">94.2%</p>
-                  </div>
-                  <TrendingUp className="h-8 w-8 text-emerald-500/50" />
-                </div>
-                <div className="rounded-lg border border-cyan-200 bg-cyan-50/80 p-4">
-                  <div className="flex items-start gap-3">
-                    <Sparkles className="mt-0.5 h-4 w-4 text-cyan-600" />
-                    <div>
-                      <p className="text-sm font-medium text-cyan-700">AI Insight</p>
-                      <p className="mt-1 text-xs text-slate-600">
-                        Conveyor Belt A shows failure risk — recommend immediate
-                        belt replacement based on maintenance history.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-lg">
+              <p className="text-sm font-semibold tracking-wide text-teal-600 uppercase">
+                Built for the plant floor
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-slate-700">
+                One place for assets, work orders, inventory, and training — with an
+                AI assistant when your team needs a quick answer.
+              </p>
+              <Link
+                href="/blue-mms"
+                className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-cyan-600 hover:text-cyan-500"
+              >
+                Watch the walkthrough
+                <ArrowRight className="h-4 w-4" />
+              </Link>
             </div>
           </div>
         </div>
