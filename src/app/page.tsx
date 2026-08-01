@@ -38,7 +38,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-cyan-50 via-white to-white">
+      <section className="relative overflow-hidden bg-gradient-to-b from-cyan-100/70 via-slate-100 to-slate-100">
         <div className="absolute top-20 right-0 h-96 w-96 rounded-full bg-cyan-400/20 blur-3xl" />
         <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-teal-400/10 blur-3xl" />
         <div className="relative mx-auto max-w-7xl section-padding">
@@ -119,7 +119,7 @@ export default function HomePage() {
       </section>
 
       {/* Blue MMS Highlight */}
-      <section className="section-padding bg-gradient-to-b from-slate-50 to-white">
+      <section className="section-padding bg-gradient-to-b from-slate-200/60 to-slate-100">
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>

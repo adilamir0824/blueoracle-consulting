@@ -17,7 +17,7 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-teal-800/80 bg-teal-950/95 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex items-center" aria-label="Blue Oracle Consulting home">
           <Image
@@ -25,7 +25,7 @@ export function Header() {
             alt="Blue Oracle Consulting"
             width={368}
             height={120}
-            className="h-16 w-auto object-contain sm:h-[4.6rem] md:h-[5.2rem]"
+            className="h-16 w-auto rounded-sm bg-white object-contain sm:h-[4.6rem] md:h-[5.2rem]"
             priority
           />
         </Link>
@@ -35,7 +35,7 @@ export function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-medium text-teal-700 transition-colors hover:text-cyan-600"
+              className="text-sm font-medium text-teal-100 transition-colors hover:text-cyan-400"
             >
               {item.name}
             </Link>
@@ -50,7 +50,7 @@ export function Header() {
 
         <button
           type="button"
-          className="md:hidden text-teal-700"
+          className="md:hidden text-teal-100"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -59,13 +59,13 @@ export function Header() {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-slate-200 bg-white px-6 py-4 md:hidden">
+        <div className="border-t border-teal-800 bg-teal-950 px-6 py-4 md:hidden">
           <nav className="flex flex-col gap-4">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-teal-700"
+                className="text-sm font-medium text-teal-100"
                 onClick={() => setMobileOpen(false)}
               >
                 {item.name}
