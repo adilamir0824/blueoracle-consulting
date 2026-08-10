@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 280" role="img" aria-label="Blue Oracle Consulting">
+  <title>Blue Oracle Consulting</title>
+  <g fill="#4DD6E7">
+    <rect x="48" y="52" width="168" height="36" rx="18"/>
+    <rect x="72" y="96" width="144" height="36" rx="18"/>
+    <rect x="96" y="140" width="120" height="36" rx="18"/>
+    <rect x="120" y="184" width="96" height="36" rx="18"/>
+  </g>
+  <g font-family="Arial Black, Helvetica Neue, Arial, sans-serif" fill="#F8FAFC">
+    <text x="248" y="118" font-size="78" font-weight="900">BLUE</text>
+    <text x="248" y="198" font-size="78" font-weight="900">ORACLE</text>
+  </g>
+  <text x="250" y="238" font-family="Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="500" fill="#4DD6E7"><tspan>C</tspan><tspan dx="19">O</tspan><tspan dx="19">N</tspan><tspan dx="19">S</tspan><tspan dx="19">U</tspan><tspan dx="19">L</tspan><tspan dx="19">T</tspan><tspan dx="19">I</tspan><tspan dx="19">N</tspan><tspan dx="19">G</tspan></text>
+</svg>
