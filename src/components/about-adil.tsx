@@ -5,9 +5,13 @@ import { siteConfig } from "@/lib/utils";
 interface AboutAdilProps {
   /** Soft background tint for alternate section placement */
   muted?: boolean;
+  /** Use h1 + priority image when this section leads the About page */
+  asPageTitle?: boolean;
 }
 
-export function AboutAdil({ muted = false }: AboutAdilProps) {
+export function AboutAdil({ muted = false, asPageTitle = false }: AboutAdilProps) {
+  const HeadingTag = asPageTitle ? "h1" : "h2";
+
   return (
     <section
       className={
@@ -27,7 +31,7 @@ export function AboutAdil({ muted = false }: AboutAdilProps) {
                 height={1000}
                 className="aspect-[4/5] h-auto w-full object-cover object-top"
                 sizes="(max-width: 1024px) 280px, 280px"
-                priority={false}
+                priority={asPageTitle}
               />
             </div>
             <figcaption className="mt-4 text-sm font-medium text-slate-600">
@@ -39,9 +43,9 @@ export function AboutAdil({ muted = false }: AboutAdilProps) {
             <p className="text-sm font-semibold tracking-widest text-teal-500 uppercase">
               Founder
             </p>
-            <h2 className="mt-2 font-display text-3xl font-bold text-slate-900 md:text-4xl">
+            <HeadingTag className="mt-2 font-display text-3xl font-bold text-slate-900 md:text-4xl">
               About Adil Amir
-            </h2>
+            </HeadingTag>
 
             <div className="mt-6 space-y-4 text-slate-600 leading-relaxed">
               <p>
