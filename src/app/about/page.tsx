@@ -39,41 +39,7 @@ const values = [
 export default function AboutPage() {
   return (
     <>
-      <section className="section-padding">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
-            <div>
-              <p className="text-sm font-semibold tracking-widest text-teal-500 uppercase">
-                About Us
-              </p>
-              <h1 className="mt-2 font-display text-4xl font-bold text-slate-900 md:text-5xl">
-                The oracle sees what others miss
-              </h1>
-            </div>
-            <div className="space-y-4 text-slate-600 leading-relaxed">
-              <p>
-                Blue Oracle Consulting was founded on a simple belief: most
-                operational problems aren&apos;t caused by bad people — they&apos;re
-                caused by bad systems. Planning that doesn&apos;t account for
-                reality. Schedules that ignore constraints. Maintenance that
-                reacts instead of predicts.
-              </p>
-              <p>
-                We help organizations fix those systems. Our consultants bring
-                deep experience in operations management, production planning,
-                and maintenance strategy across manufacturing, logistics,
-                utilities, and facilities.
-              </p>
-              <p>
-                When we saw how much downtime and waste came from poor
-                maintenance management, we built Blue MMS — our own
-                AI-powered maintenance platform — to give teams the tools
-                they deserve.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <AboutAdil asPageTitle />
 
       <section className="section-padding bg-cyan-50/40">
         <div className="mx-auto max-w-7xl">
@@ -116,8 +82,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      <AboutAdil muted />
 
       <CTASection
         title="Want to work with us?"
