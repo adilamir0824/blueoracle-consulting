@@ -9,6 +9,7 @@ import {
   Target,
   Wrench,
 } from "lucide-react";
+import { AboutAdil } from "@/components/about-adil";
 import { ServiceCard } from "@/components/service-card";
 import { CTASection } from "@/components/cta-section";
 import { siteConfig } from "@/lib/utils";
@@ -189,6 +190,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <AboutAdil muted />
 
       <CTASection
         title="Ready to optimize your operations?"

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import { AboutAdil } from "@/components/about-adil";
 import { CTASection } from "@/components/cta-section";
 import { Eye, Handshake, Lightbulb, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about Blue Oracle Consulting — operations management experts helping organizations plan, schedule, and maintain smarter.",
+    "Meet Adil Amir, founder of Blue Oracle Consulting — hands-on maintenance systems expertise and Blue MMS for manufacturers and property teams.",
 };
 
 const values = [
@@ -115,6 +116,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <AboutAdil muted />
 
       <CTASection
         title="Want to work with us?"
